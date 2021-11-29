@@ -1,4 +1,5 @@
 package utilities;
+
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -16,6 +17,7 @@ public class ConfigReader {
         }
     }
     public static String getProperty(String key){
+
         return properties.getProperty(key);
     }
 }

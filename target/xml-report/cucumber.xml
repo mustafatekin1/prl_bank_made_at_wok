@@ -1,21 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="62.63">
-    <testcase classname="user can login with valid credentials" name="_2" time="62.242">
-        <failure message="element not interactable&#10;  (Session info: chrome=96.0.4664.45)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MUSTAFA', ip: '192.168.2.183', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\merve1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: da401f624e7c62fa06b0ae224bf16103" type="org.openqa.selenium.ElementNotInteractableException">
-            <![CDATA[Given user opens the url....................................................passed
-When user navigates to login page...........................................passed
-And user enters username "bf_customer1".....................................passed
-And user enters password "Customer1*".......................................passed
-Then verify that user successfully logins to the account....................failed
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="54.145">
+    <testcase classname="create customer address positive with first try" name="_2" time="35.774">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given user is on the main  page.............................................passed
+And user verifies the GMIBANK text..........................................passed
+And user navigates the sing in page.........................................passed
+And user verifies the sing in page..........................................passed
+And user enters Username "bf_employee1".....................................passed
+And user enters Password "Magic46.".........................................passed
+And user enters Sing in button..............................................passed
+Then verify that user successfully logins to the account....................passed
+And user clicks the My Operations...........................................passed
+And user clicks Manage Customers............................................passed
+And user clicks Create a new Customer.......................................passed
+And user enters "SSN" number of new registrant to search for the customer...passed
+And user clicks search button...............................................passed
+And user enters middle initial with faker...................................passed
+And user enters phone number with faker.....................................passed
+And user enters zip code with faker.........................................passed
+And user enters address with faker..........................................passed
+And user enters city with faker.............................................passed
+And user enters country as USA..............................................passed
+And user enters a state from USA with faker.................................passed
+And user clicks on save button on customer_create page......................passed
+Then verify the success message on customer creation page...................failed
 
 StackTrace:
-org.openqa.selenium.ElementNotInteractableException: element not interactable
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.US10_AddressCreateWithFaker.verify_the_success_message_on_customer_creation_page(US10_AddressCreateWithFaker.java:162)
+	at ✽.verify the success message on customer creation page(file:///C:/Users/merve1/IdeaProjects/my_prl_bank_project/./src/test/resources/features/US10_AddressCreateWithFaker.feature:64)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="user can login with valid credentials" name="_2" time="17.737">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login\-item&quot;}&#10;  (Session info: chrome=96.0.4664.45)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MUSTAFA', ip: '192.168.2.183', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\merve1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61024}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 44f35fcd99c2a85794fb562f781e4eae&#10;*** Element info: {Using=id, value=login-item}" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given user is on the main  page.............................................passed
+And user verifies the GMIBANK text..........................................passed
+And user navigates the sing in page.........................................failed
+And user verifies the sing in page..........................................skipped
+And user enters Username "bf_employee1".....................................skipped
+And user enters Password "Magic46.".........................................skipped
+And user enters Sing in button..............................................skipped
+Then verify that user successfully logins to the account....................skipped
+And user clicks the My Operations...........................................skipped
+And user clicks Manage Customers............................................skipped
+And user clicks Create a new Customer.......................................skipped
+And user enters "432-76-2386" number to search for the customer.............skipped
+And user clicks search button...............................................skipped
+Then verify that First Name is populated....................................skipped
+And verify that Last Name is populated......................................skipped
+And verify that email is populated..........................................skipped
+And verify that Mobile Phone Number is populated............................skipped
+And verify that Address is populated........................................skipped
+And verify that SSN is populated............................................skipped
+And verify that Create Date is populated....................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login\-item"}
   (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MUSTAFA', ip: '192.168.2.183', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\merve1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: da401f624e7c62fa06b0ae224bf16103
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\merve1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61024}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 44f35fcd99c2a85794fb562f781e4eae
+*** Element info: {Using=id, value=login-item}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -26,16 +78,15 @@ Session ID: da401f624e7c62fa06b0ae224bf16103
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy19.click(Unknown Source)
-	at stepdefinitions.LoginStepDefs.verify_that_user_successfully_logins_to_the_account(LoginStepDefs.java:30)
-	at ✽.verify that user successfully logins to the account(file:///C:/Users/merve1/IdeaProjects/my_prl_bank_project/./src/test/resources/features/login.feature:10)
+	at stepdefinitions.US14_Create_or_Edit_Account.user_navigates_the_sing_in_page(US14_Create_or_Edit_Account.java:20)
+	at ✽.user navigates the sing in page(file:///C:/Users/merve1/IdeaProjects/my_prl_bank_project/./src/test/resources/features/us09_create_customer.feature:7)
 ]]>
         </failure>
     </testcase>

@@ -6,23 +6,41 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class LoginPage {
+    public LoginPage(){
+        PageFactory.initElements(Driver.getDriver(),this); }
 
 
-    public LoginPage() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
-    @FindBy (xpath = "(//a[@class='dropdown-toggle nav-link'])[2]")
-    public WebElement accountMenu;
+    @FindBy(xpath = "//input[@name='username']")
+    public WebElement loginUserName;
 
-    @FindBy (partialLinkText = "Sign in")
-    public WebElement signInMenu;
+    @FindBy(xpath = "//div[@class='invalid-feedback']")
+    public WebElement loginUserNameAssertion;
 
-    @FindBy (id = "username")
-    public WebElement username;
+    @FindBy(id = "password")
+    public WebElement loginPassword;
 
-    @FindBy (id = "password")
-    public WebElement password;
+    @FindBy(xpath = "//div[@class='invalid-feedback']")
+    public WebElement loginPasswordAssertion;
 
-    @FindBy (xpath = "//button[@type='button' and @aria-label='Menu']")
+    @FindBy(xpath = "//a[@href='/account/reset/request']")
+    public WebElement forgetPassword;
+
+    @FindBy(xpath = "(//a[@href='/account/register'])[2]")
+    public WebElement registerNewAccount;
+
+    @FindBy(xpath = "//button[@class='btn btn-primary']")
     public WebElement signInButton;
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -16,8 +16,8 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",//MUST
         glue = "stepdefinitions",//MUST
-        tags = "@customer_login",//OPTIONAL. WITHOUT TAGS, RUNNER RUNS ALL FEATURES
-        dryRun = false//OPTIONAL.
+        tags = "@customer_creation_byEmployee",//OPTIONAL. WITHOUT TAGS, RUNNER RUNS ALL FEATURES
+        dryRun = false //OPTIONAL.
         // WITHOUT dryRun(dryRun=false is default,
         // we can not check completion error without seeing the browser
 )

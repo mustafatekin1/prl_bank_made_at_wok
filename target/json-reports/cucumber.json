@@ -3,11 +3,10 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-23T14:40:38.389Z",
+        "start_timestamp": "2021-11-29T14:03:28.683Z",
         "before": [
           {
             "result": {
-              "duration": 1953100,
               "status": "passed"
             },
             "match": {
@@ -15,7 +14,349 @@
             }
           }
         ],
-        "line": 15,
+        "line": 67,
+        "name": "",
+        "description": "",
+        "id": "create-customer-address-positive-with-first-try;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 976500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16282226500,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user is on the main  page",
+            "match": {
+              "location": "stepdefinitions.RegistrationStepDef.user_is_on_the_main_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 21484300,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user verifies the GMIBANK text",
+            "match": {
+              "location": "stepdefinitions.RegistrationStepDef.user_verifies_the_gmibank_text()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 424804700,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user navigates the sing in page",
+            "match": {
+              "location": "stepdefinitions.US14_Create_or_Edit_Account.user_navigates_the_sing_in_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user verifies the sing in page",
+            "match": {
+              "location": "stepdefinitions.US14_Create_or_Edit_Account.user_verifies_the_sing_in_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170898400,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user enters Username \"bf_employee1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bf_employee1\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.US14_Create_or_Edit_Account.user_enters_username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 247070300,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user enters Password \"Magic46.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Magic46.\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.US14_Create_or_Edit_Account.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2302734400,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user enters Sing in button",
+            "match": {
+              "location": "stepdefinitions.US14_Create_or_Edit_Account.user_enters_sing_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75195300,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "verify that user successfully logins to the account",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.verify_that_user_successfully_logins_to_the_account()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 89843700,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user clicks the My Operations",
+            "match": {
+              "location": "stepdefinitions.US14_Create_or_Edit_Account.user_clicks_the_my_operations()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 227539000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user clicks Manage Customers",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.user_clicks_manage_customers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 605468700,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user clicks Create a new Customer",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.user_clicks_create_a_new_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1981445400,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "user enters \"SSN\" number of new registrant to search for the customer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SSN\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefinitions.US10_AddressCreateWithFaker.user_enters_number_of_new_registrant_to_search_for_the_customer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6910156300,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "user clicks search button",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.user_clicks_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 598632800,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user enters middle initial with faker",
+            "match": {
+              "location": "stepdefinitions.US10_AddressCreateWithFaker.user_enters_middle_initial_with_faker()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 755859400,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user enters phone number with faker",
+            "match": {
+              "location": "stepdefinitions.US10_AddressCreateWithFaker.user_enters_phone_number_with_faker()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 416992200,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user enters zip code with faker",
+            "match": {
+              "location": "stepdefinitions.US10_AddressCreateWithFaker.user_enters_zip_code_with_faker()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 518554700,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user enters address with faker",
+            "match": {
+              "location": "stepdefinitions.US10_AddressCreateWithFaker.user_enters_address_with_faker()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 457031200,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "user enters city with faker",
+            "match": {
+              "location": "stepdefinitions.US10_AddressCreateWithFaker.user_enters_city_with_faker()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 417968700,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "user enters country as USA",
+            "match": {
+              "location": "stepdefinitions.US10_AddressCreateWithFaker.user_enters_country_with_faker()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 415039100,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user enters a state from USA with faker",
+            "match": {
+              "location": "stepdefinitions.US10_AddressCreateWithFaker.user_enters_a_state_from_usa_with_faker()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 696289000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "user clicks on save button on customer_create page",
+            "match": {
+              "location": "stepdefinitions.US10_AddressCreateWithFaker.user_clicks_on_save_button_on_customer_create_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat stepdefinitions.US10_AddressCreateWithFaker.verify_the_success_message_on_customer_creation_page(US10_AddressCreateWithFaker.java:162)\r\n\tat ✽.verify the success message on customer creation page(file:///C:/Users/merve1/IdeaProjects/my_prl_bank_project/./src/test/resources/features/US10_AddressCreateWithFaker.feature:64)\r\n",
+              "duration": 2034179700,
+              "status": "failed"
+            },
+            "line": 64,
+            "name": "verify the success message on customer creation page",
+            "match": {
+              "location": "stepdefinitions.US10_AddressCreateWithFaker.verify_the_success_message_on_customer_creation_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create_address_positive"
+          },
+          {
+            "name": "@customer_creation_byEmployee"
+          }
+        ]
+      }
+    ],
+    "name": "create customer address positive with first try",
+    "description": "",
+    "id": "create-customer-address-positive-with-first-try",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US10_AddressCreateWithFaker.feature",
+    "tags": [
+      {
+        "name": "@create_address_positive",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-29T14:04:04.507Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 42,
         "name": "",
         "description": "",
         "id": "user-can-login-with-valid-credentials;;;2",
@@ -34,76 +375,249 @@
         "steps": [
           {
             "result": {
-              "duration": 46101562500,
+              "duration": 1965820300,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user opens the url",
+            "line": 5,
+            "name": "user is on the main  page",
             "match": {
-              "location": "stepdefinitions.LoginStepDefs.user_opens_the_url()"
+              "location": "stepdefinitions.RegistrationStepDef.user_is_on_the_main_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 451171900,
+              "duration": 141601500,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user navigates to login page",
+            "line": 6,
+            "name": "user verifies the GMIBANK text",
             "match": {
-              "location": "stepdefinitions.LoginStepDefs.user_navigates_to_login_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 199218800,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user enters username \"bf_customer1\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"bf_customer1\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.LoginStepDefs.user_enters_username(java.lang.String)"
+              "location": "stepdefinitions.RegistrationStepDef.user_verifies_the_gmibank_text()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 258789100,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user enters password \"Customer1*\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Customer1*\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.LoginStepDefs.user_enters_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MUSTAFA\u0027, ip: \u0027192.168.2.183\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\merve1\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: da401f624e7c62fa06b0ae224bf16103\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat stepdefinitions.LoginStepDefs.verify_that_user_successfully_logins_to_the_account(LoginStepDefs.java:30)\r\n\tat ✽.verify that user successfully logins to the account(file:///C:/Users/merve1/IdeaProjects/my_prl_bank_project/./src/test/resources/features/login.feature:10)\r\n",
-              "duration": 15124023400,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login\\-item\"}\n  (Session info: chrome\u003d96.0.4664.45)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MUSTAFA\u0027, ip: \u0027192.168.2.183\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\merve1\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61024}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 44f35fcd99c2a85794fb562f781e4eae\n*** Element info: {Using\u003did, value\u003dlogin-item}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat stepdefinitions.US14_Create_or_Edit_Account.user_navigates_the_sing_in_page(US14_Create_or_Edit_Account.java:20)\r\n\tat ✽.user navigates the sing in page(file:///C:/Users/merve1/IdeaProjects/my_prl_bank_project/./src/test/resources/features/us09_create_customer.feature:7)\r\n",
+              "duration": 15597656200,
               "status": "failed"
             },
+            "line": 7,
+            "name": "user navigates the sing in page",
+            "match": {
+              "location": "stepdefinitions.US14_Create_or_Edit_Account.user_navigates_the_sing_in_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user verifies the sing in page",
+            "match": {
+              "location": "stepdefinitions.US14_Create_or_Edit_Account.user_verifies_the_sing_in_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enters Username \"bf_employee1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bf_employee1\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.US14_Create_or_Edit_Account.user_enters_username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 976600,
+              "status": "skipped"
+            },
             "line": 10,
+            "name": "user enters Password \"Magic46.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Magic46.\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.US14_Create_or_Edit_Account.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user enters Sing in button",
+            "match": {
+              "location": "stepdefinitions.US14_Create_or_Edit_Account.user_enters_sing_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 976600,
+              "status": "skipped"
+            },
+            "line": 12,
             "name": "verify that user successfully logins to the account",
             "match": {
-              "location": "stepdefinitions.LoginStepDefs.verify_that_user_successfully_logins_to_the_account()"
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.verify_that_user_successfully_logins_to_the_account()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user clicks the My Operations",
+            "match": {
+              "location": "stepdefinitions.US14_Create_or_Edit_Account.user_clicks_the_my_operations()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user clicks Manage Customers",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.user_clicks_manage_customers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 976500,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user clicks Create a new Customer",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.user_clicks_create_a_new_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user enters \"432-76-2386\" number to search for the customer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"432-76-2386\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.user_enters_number_to_search_for_the_customer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user clicks search button",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.user_clicks_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "verify that First Name is populated",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.verify_that_first_name_is_populated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "verify that Last Name is populated",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.verify_that_last_name_is_populated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "verify that email is populated",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.verify_that_email_is_populated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "verify that Mobile Phone Number is populated",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.verify_that_mobile_phone_number_is_populated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "verify that Address is populated",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.verify_that_address_is_populated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "verify that SSN is populated",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.verify_that_ssn_is_populated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 976600,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "verify that Create Date is populated",
+            "match": {
+              "location": "stepdefinitions.US09CreateCustomerStepDefs.verify_that_create_date_is_populated()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -111,7 +625,7 @@
             "name": "@login"
           },
           {
-            "name": "@customer_login"
+            "name": "@customer_creation_byEmployee"
           }
         ]
       }
@@ -120,7 +634,7 @@
     "description": "",
     "id": "user-can-login-with-valid-credentials",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/us09_create_customer.feature",
     "tags": [
       {
         "name": "@login",

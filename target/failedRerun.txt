@@ -1,1 +1,2 @@
-file:src/test/resources/features/login.feature:15
+file:src/test/resources/features/US10_AddressCreateWithFaker.feature:67
+file:src/test/resources/features/us09_create_customer.feature:42
